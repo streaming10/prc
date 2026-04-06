@@ -536,6 +536,26 @@ a.contact-info__value:hover{color:var(--c-primary)}
 .contact-info__map-placeholder svg{width:28px;height:28px;opacity:.4}
 
 /* ============================================
+   25 · LEGAL PAGES
+   ============================================ */
+.page-hero--short{min-height:34vh}
+
+.legal{background:var(--c-bg)}
+.legal__body{max-width:800px;margin:0 auto}
+.legal__body h2{font-size:clamp(1.15rem,2vw,1.4rem);margin:var(--s-10) 0 var(--s-4);color:var(--c-text)}
+.legal__body h2:first-child{margin-top:0}
+.legal__body p{font-size:.93rem;line-height:1.85;margin-bottom:var(--s-4);max-width:none;color:var(--c-text-muted)}
+.legal__body a{color:var(--c-primary);text-decoration:underline;text-underline-offset:2px;transition:color var(--dur-fast)}
+.legal__body a:hover{color:var(--c-accent)}
+.legal__body ul{margin:0 0 var(--s-6) var(--s-6);display:flex;flex-direction:column;gap:var(--s-2)}
+.legal__body li{font-size:.93rem;line-height:1.8;color:var(--c-text-muted);padding-left:var(--s-4);position:relative}
+.legal__body li::before{content:'';position:absolute;left:0;top:.7em;width:5px;height:5px;border-radius:50%;background:var(--c-primary);opacity:.35}
+.legal__data{margin-left:0;padding:var(--s-6);background:var(--c-bg-alt);border-radius:var(--radius);border:1px solid var(--c-border)}
+.legal__data li{padding-left:0}
+.legal__data li::before{display:none}
+.legal__updated{margin-top:var(--s-12);font-size:.82rem;color:var(--c-text-muted);opacity:.7;font-style:italic}
+
+/* ============================================
    23 · SERVICES PAGE (svc)
    ============================================ */
 .svc{position:relative;background:var(--c-bg)}
