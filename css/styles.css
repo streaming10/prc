@@ -536,6 +536,46 @@ a.contact-info__value:hover{color:var(--c-primary)}
 .contact-info__map-placeholder svg{width:28px;height:28px;opacity:.4}
 
 /* ============================================
+   23 · SERVICES PAGE (svc)
+   ============================================ */
+.svc{position:relative;background:var(--c-bg)}
+.svc--alt{background:var(--c-bg-alt)}
+
+.svc__grid{display:grid;grid-template-columns:1fr;gap:var(--s-12);align-items:center}
+
+.svc__content .label{margin-bottom:var(--s-4)}
+.svc__content h2{margin-bottom:var(--s-6)}
+.svc__lead{font-size:1.02rem;color:var(--c-text);font-weight:500;margin-bottom:var(--s-4)}
+.svc__content > p{margin-bottom:var(--s-8)}
+
+.svc__list{display:flex;flex-direction:column;gap:var(--s-4);margin-bottom:var(--s-8)}
+.svc__list-item{display:flex;align-items:flex-start;gap:var(--s-3);font-size:.93rem;color:var(--c-text);line-height:1.6}
+.svc__check{width:18px;height:18px;flex-shrink:0;color:var(--c-primary);margin-top:2px}
+
+.svc__cta{margin-top:var(--s-2)}
+
+/* large icon visual */
+.svc__visual{display:flex;align-items:center;justify-content:center}
+.svc__icon-large{width:clamp(140px,22vw,220px);height:clamp(140px,22vw,220px);display:flex;align-items:center;justify-content:center;border-radius:50%;background:linear-gradient(135deg,rgba(var(--c-primary-rgb),.06),rgba(var(--c-secondary-rgb),.03));color:var(--c-primary);position:relative}
+.svc__icon-large::after{content:'';position:absolute;inset:-12px;border-radius:50%;border:1px dashed rgba(var(--c-primary-rgb),.1)}
+.svc__icon-large svg{width:55%;height:55%}
+
+/* ============================================
+   24 · METHODOLOGY TIMELINE
+   ============================================ */
+.method{background:var(--c-bg);position:relative}
+.method__head{text-align:center;margin-bottom:var(--s-16)}
+.method__head p{margin:0 auto}
+
+.method__timeline{display:grid;grid-template-columns:1fr;gap:var(--s-8);position:relative}
+
+.method__step{position:relative;padding:var(--s-8);background:var(--c-white);border:1px solid var(--c-border);border-radius:var(--radius-lg);transition:transform var(--dur-base) var(--ease),box-shadow var(--dur-base) var(--ease)}
+.method__step:hover{transform:translateY(-3px);box-shadow:var(--sh-md)}
+.method__num{display:inline-block;font-family:var(--f-mono);font-size:.72rem;font-weight:600;color:var(--c-accent);margin-bottom:var(--s-3);letter-spacing:.05em}
+.method__step h4{margin-bottom:var(--s-2)}
+.method__step p{font-size:.9rem}
+
+/* ============================================
    22 · WHY STRIP
    ============================================ */
 .why-strip{padding:var(--s-16) 0 var(--s-20);background:var(--c-bg-alt);position:relative}
@@ -570,6 +610,10 @@ a.contact-info__value:hover{color:var(--c-primary)}
   .footer__bar{flex-direction:row;justify-content:space-between}
   .contact__grid{grid-template-columns:1.2fr .8fr;gap:var(--s-16)}
   .why-strip__grid{grid-template-columns:repeat(3,1fr)}
+  .svc__grid{grid-template-columns:1fr 1fr;gap:var(--s-16)}
+  .svc__grid--reverse{direction:rtl}
+  .svc__grid--reverse > *{direction:ltr}
+  .method__timeline{grid-template-columns:repeat(4,1fr);gap:var(--s-6)}
 }
 
 @media(min-width:1024px){
@@ -577,7 +621,8 @@ a.contact-info__value:hover{color:var(--c-primary)}
   .nav{display:flex}
   .burger{display:none}
   .hero__body{max-width:55%}
-  .bento{grid-template-columns:1.15fr 1fr;gap:var(--s-8)}
+  .bento{grid-template-columns:1.15fr 1fr 1fr;gap:var(--s-8)}
+  .bento__card--feat{grid-row:span 2}
 }
 
 @media(min-width:1280px){
