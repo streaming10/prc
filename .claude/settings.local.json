@@ -10,7 +10,11 @@
       "Bash(grep -c \"font-size=''''11.5''''\" *.html)",
       "Bash(grep -c \"twitter:card\" *.html)",
       "Bash(grep -c \"og:image\" *.html)",
-      "Bash(grep -c \"privacidad.html\" *.html)"
+      "Bash(grep -c \"privacidad.html\" *.html)",
+      "Bash(grep -c 'rel=\"\"\"\"canonical\"\"\"\"' *.html)",
+      "Bash(grep -c 'twitter:card' *.html)",
+      "Bash(grep -c 'application/ld+json' *.html)",
+      "Bash(wc -l *.html css/styles.css js/main.js sitemap.xml robots.txt llms.txt)"
     ]
   }
 }

@@ -1,5 +1,23 @@
 User-agent: *
 Allow: /
 
-# TODO: Replace [DOMAIN] with actual domain
-Sitemap: [DOMAIN]/sitemap.xml
+# AI crawlers — explicitly allowed
+User-agent: GPTBot
+Allow: /
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+Sitemap: https://streaming10.github.io/prc/sitemap.xml

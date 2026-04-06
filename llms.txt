@@ -1,0 +1,33 @@
+# PRC Data & Intelligence
+
+> Empresa española especializada en analítica de datos (Business Intelligence), inteligencia competitiva (OSINT), ciberseguridad, threat intelligence y auditorías de certificación de seguridad (ISO 27001, ENS, RGPD, SOC 2). Sede en Madrid, España.
+
+## Servicios
+- Analítica de Datos & Business Intelligence: dashboards ejecutivos, data warehouse, ETL/ELT, modelos predictivos, KPI design
+- Inteligencia Competitiva & OSINT: due diligence digital, mapeo de competidores, brand monitoring, análisis geopolítico
+- Ciberseguridad & Threat Intelligence: SOC 24/7, threat hunting, pentesting, incident response, formación
+- Auditorías & Certificación de Seguridad: ISO 27001, ENS (Esquema Nacional de Seguridad), RGPD/GDPR, SOC 2, gap analysis
+
+## Certificaciones del equipo
+CISSP, CISM, CEH, OSCP, CISA, ISO 27001 Lead Auditor, GOSI
+
+## Sectores
+Finanzas, salud, industria, administración pública, retail, tecnología
+
+## Ubicación
+Madrid, España
+
+## Contacto
+- Email: contacto@prcdata.com
+- DPO: dpo@prcdata.com
+- Teléfono: +34 900 000 000
+
+## Páginas del sitio
+- Home: https://streaming10.github.io/prc/index.html
+- Servicios: https://streaming10.github.io/prc/servicios.html
+- Sobre nosotros: https://streaming10.github.io/prc/nosotros.html
+- Blog: https://streaming10.github.io/prc/blog.html
+- Contacto: https://streaming10.github.io/prc/contacto.html
+- Aviso legal: https://streaming10.github.io/prc/aviso-legal.html
+- Privacidad: https://streaming10.github.io/prc/privacidad.html
+- Cookies: https://streaming10.github.io/prc/cookies.html
