@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git init:*)",
+      "Bash(ls /mnt/)",
+      "Read(//c/Users/Luis/.claude/**)",
+      "Read(//c/Users/Luis/.claude/plugins/**)"
+    ]
+  }
+}
