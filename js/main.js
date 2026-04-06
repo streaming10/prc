@@ -210,6 +210,26 @@
       return valid;
     }
 
+    // Privacy checkbox
+    const privacyCheck = document.getElementById('privacy');
+
+    function validateCheckbox() {
+      if (!privacyCheck) return true;
+      const group = privacyCheck.closest('.form__group');
+      const errorEl = group ? group.querySelector('.form__error') : null;
+      const valid = privacyCheck.checked;
+      if (group) {
+        group.classList.toggle('is-invalid', !valid);
+        group.classList.toggle('is-valid', valid);
+      }
+      if (errorEl) errorEl.textContent = valid ? '' : 'Debe aceptar la Política de Privacidad.';
+      return valid;
+    }
+
+    if (privacyCheck) {
+      privacyCheck.addEventListener('change', validateCheckbox);
+    }
+
     // Submit
     contactForm.addEventListener('submit', (e) => {
       e.preventDefault();
@@ -219,6 +239,7 @@
       fields.forEach(f => {
         if (!validateField(f)) allValid = false;
       });
+      if (!validateCheckbox()) allValid = false;
 
       if (!allValid) return;
 

@@ -11,13 +11,16 @@
   <meta property="og:description" content="Hablemos de cómo proteger y potenciar su negocio con inteligencia de datos.">
   <meta property="og:type" content="website">
   <meta property="og:locale" content="es_ES">
+  <meta property="og:url" content=""><!-- TODO: Add absolute URL -->
+  <meta property="og:image" content=""><!-- TODO: Add absolute URL to OG image -->
+  <meta name="twitter:card" content="summary">
 
   <!-- Preconnect -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <!-- Favicon -->
-  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23005386'/><text x='4' y='23' font-family='sans-serif' font-weight='800' font-size='18' fill='white'>P</text></svg>">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23005386'/><text x='2.5' y='21.5' font-family='sans-serif' font-weight='800' font-size='11.5' fill='white' letter-spacing='-0.5'>PRC</text></svg>">
 
   <!-- Styles -->
   <link rel="stylesheet" href="css/styles.css">
@@ -195,6 +198,18 @@
                 </div>
               </fieldset>
 
+              <!-- Privacy checkbox -->
+              <div class="form__group form__group--check">
+                <label class="form__checkbox">
+                  <input type="checkbox" id="privacy" name="privacy" required>
+                  <span class="form__checkbox-box" aria-hidden="true">
+                    <svg viewBox="0 0 12 12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2.5 6l2.5 2.5 4.5-5"/></svg>
+                  </span>
+                  <span class="form__checkbox-text">He leído y acepto la <a href="privacidad.html" target="_blank" rel="noopener">Política de Privacidad</a> <span class="form__req">*</span></span>
+                </label>
+                <span class="form__error" role="alert"></span>
+              </div>
+
               <!-- Submit -->
               <button type="submit" class="btn btn--gold form__submit" id="submitBtn">
                 <span class="form__submit-text">Enviar mensaje</span>
@@ -203,7 +218,7 @@
                 </span>
               </button>
 
-              <p class="form__privacy">Sus datos serán tratados conforme al RGPD. Consulte nuestra <a href="#">política de privacidad</a>.</p>
+              <p class="form__privacy">Sus datos serán tratados conforme al RGPD. Consulte nuestra <a href="privacidad.html">Política de Privacidad</a>.</p>
             </form>
 
             <!-- Success message (hidden by default) -->
@@ -399,6 +414,7 @@
         <span class="footer__copy">&copy; 2026 PRC Data and Intelligence S.L. Todos los derechos reservados.</span>
         <div class="footer__legal">
           <a href="aviso-legal.html">Aviso legal</a>
+          <a href="privacidad.html">Privacidad</a>
           <a href="cookies.html">Cookies</a>
         </div>
       </div>

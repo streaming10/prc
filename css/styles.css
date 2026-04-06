@@ -483,6 +483,19 @@ p{color:var(--c-text-muted);max-width:62ch}
 .form__req{color:#d94444;font-weight:500}
 .form__optional{font-size:.78rem;color:var(--c-text-muted);font-weight:400}
 
+/* checkbox */
+.form__group--check{margin-bottom:var(--s-2)}
+.form__checkbox{display:flex;align-items:flex-start;gap:var(--s-3);cursor:pointer;font-size:.88rem;color:var(--c-text);line-height:1.5}
+.form__checkbox input{position:absolute;opacity:0;width:0;height:0}
+.form__checkbox-box{width:20px;height:20px;flex-shrink:0;border:1.5px solid var(--c-border);border-radius:4px;display:flex;align-items:center;justify-content:center;transition:all var(--dur-fast);margin-top:1px}
+.form__checkbox-box svg{width:12px;height:12px;opacity:0;color:#fff;transition:opacity var(--dur-fast)}
+.form__checkbox input:checked ~ .form__checkbox-box{background:var(--c-primary);border-color:var(--c-primary)}
+.form__checkbox input:checked ~ .form__checkbox-box svg{opacity:1}
+.form__checkbox input:focus-visible ~ .form__checkbox-box{outline:2px solid var(--c-primary);outline-offset:2px}
+.form__checkbox-text a{color:var(--c-primary);text-decoration:underline;text-underline-offset:2px}
+.form__checkbox-text a:hover{color:var(--c-accent)}
+.form__group--check.is-invalid .form__checkbox-box{border-color:#d94444;animation:shake .4s var(--ease)}
+
 /* submit button */
 .form__submit{width:100%;margin-top:var(--s-4);padding:1rem;font-size:.95rem;position:relative}
 .form__submit-spinner{display:none;width:20px;height:20px;animation:spin .8s linear infinite}
@@ -538,6 +551,15 @@ a.contact-info__value:hover{color:var(--c-primary)}
 /* ============================================
    25 · LEGAL PAGES
    ============================================ */
+/* ============================================
+   26 · 404 PAGE
+   ============================================ */
+.error-page{min-height:80vh;display:flex;align-items:center;justify-content:center;text-align:center;background:var(--c-bg);position:relative;padding:var(--s-24) 0}
+.error-page__inner{max-width:500px}
+.error-page__code{display:block;font-family:var(--f-mono);font-size:clamp(5rem,12vw,9rem);font-weight:600;line-height:1;color:var(--c-primary);opacity:.12;margin-bottom:var(--s-4)}
+.error-page__title{margin-bottom:var(--s-4)}
+.error-page__text{font-size:.97rem;margin:0 auto var(--s-8);max-width:40ch}
+
 .page-hero--short{min-height:34vh}
 
 .legal{background:var(--c-bg)}

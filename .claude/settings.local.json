@@ -4,7 +4,13 @@
       "Bash(git init:*)",
       "Bash(ls /mnt/)",
       "Read(//c/Users/Luis/.claude/**)",
-      "Read(//c/Users/Luis/.claude/plugins/**)"
+      "Read(//c/Users/Luis/.claude/plugins/**)",
+      "Bash(grep -l \"aviso-legal.html\" *.html)",
+      "Bash(grep -c \"Intelligence S.L\" *.html)",
+      "Bash(grep -c \"font-size=''''11.5''''\" *.html)",
+      "Bash(grep -c \"twitter:card\" *.html)",
+      "Bash(grep -c \"og:image\" *.html)",
+      "Bash(grep -c \"privacidad.html\" *.html)"
     ]
   }
 }
