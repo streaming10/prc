@@ -151,6 +151,92 @@
   }
 
   /* ------------------------------------------
+     CONTACT FORM — floating labels + validation
+     ------------------------------------------ */
+  const contactForm = document.getElementById('contactForm');
+
+  if (contactForm) {
+    const fields = contactForm.querySelectorAll('.form__field');
+    const submitBtn = document.getElementById('submitBtn');
+    const formSuccess = document.getElementById('formSuccess');
+
+    // Track select value for floating label
+    const selects = contactForm.querySelectorAll('.form__field--select');
+    selects.forEach(sel => {
+      sel.addEventListener('change', () => {
+        sel.classList.toggle('has-value', sel.value !== '');
+        validateField(sel);
+      });
+    });
+
+    // Validate on blur
+    fields.forEach(field => {
+      field.addEventListener('blur', () => validateField(field));
+      field.addEventListener('input', () => {
+        const group = field.closest('.form__group');
+        if (group && group.classList.contains('is-invalid')) {
+          validateField(field);
+        }
+      });
+    });
+
+    function validateField(field) {
+      const group = field.closest('.form__group');
+      if (!group) return true;
+      const errorEl = group.querySelector('.form__error');
+      let valid = true;
+      let msg = '';
+
+      if (field.required && !field.value.trim()) {
+        valid = false;
+        msg = 'Este campo es obligatorio.';
+      } else if (field.type === 'email' && field.value.trim()) {
+        const emailRe = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+        if (!emailRe.test(field.value.trim())) {
+          valid = false;
+          msg = 'Introduce un email válido.';
+        }
+      } else if (field.type === 'tel' && field.value.trim()) {
+        const telRe = /^[\d\s\+\-().]{6,}$/;
+        if (!telRe.test(field.value.trim())) {
+          valid = false;
+          msg = 'Introduce un teléfono válido.';
+        }
+      }
+
+      group.classList.toggle('is-valid', valid && field.value.trim() !== '');
+      group.classList.toggle('is-invalid', !valid);
+      if (errorEl) errorEl.textContent = msg;
+      return valid;
+    }
+
+    // Submit
+    contactForm.addEventListener('submit', (e) => {
+      e.preventDefault();
+
+      // Validate all required
+      let allValid = true;
+      fields.forEach(f => {
+        if (!validateField(f)) allValid = false;
+      });
+
+      if (!allValid) return;
+
+      // Loading state
+      submitBtn.classList.add('is-loading');
+
+      // Simulate network
+      setTimeout(() => {
+        submitBtn.classList.remove('is-loading');
+        contactForm.hidden = true;
+        if (formSuccess) {
+          formSuccess.hidden = false;
+        }
+      }, 1800);
+    });
+  }
+
+  /* ------------------------------------------
      HERO — animated floating nodes (canvas)
      ------------------------------------------ */
   const canvas = document.getElementById('heroCanvas');
