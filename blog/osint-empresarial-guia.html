@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OSINT Empresarial: Qué Es y Cómo Usarlo | PRC</title>
+  <meta name="description" content="Guía completa de OSINT empresarial: qué es la inteligencia en fuentes abiertas, 5 casos de uso reales, legalidad en España y cómo su empresa puede aprovecharlo.">
+  <meta name="keywords" content="OSINT empresarial España, inteligencia fuentes abiertas empresa, due diligence OSINT, investigación competencia OSINT, OSINT legal España">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://streaming10.github.io/prc/blog/osint-empresarial-guia.html">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="OSINT Empresarial: Qué Es y Cómo Usarlo | PRC">
+  <meta property="og:description" content="Su competencia ya usa OSINT. Descubra qué es la inteligencia en fuentes abiertas y cómo aplicarla en su empresa.">
+  <meta property="og:type" content="article">
+  <meta property="og:locale" content="es_ES">
+  <meta property="og:url" content="https://streaming10.github.io/prc/blog/osint-empresarial-guia.html">
+  <meta property="og:image" content="https://streaming10.github.io/prc/assets/images/og-default.jpg">
+  <meta property="og:site_name" content="PRC Data & Intelligence">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="OSINT Empresarial: Qué Es y Cómo Usarlo | PRC">
+  <meta name="twitter:description" content="Su competencia ya usa OSINT. Descubra qué es la inteligencia en fuentes abiertas y cómo aplicarla en su empresa.">
+  <meta name="twitter:image" content="https://streaming10.github.io/prc/assets/images/og-default.jpg">
+
+  <!-- Preconnect -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'><rect width='32' height='32' rx='6' fill='%23005386'/><text x='2.5' y='21.5' font-family='sans-serif' font-weight='800' font-size='11.5' fill='white' letter-spacing='-0.5'>PRC</text></svg>">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!-- Schema.org — Article -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "OSINT Empresarial: Qué Es y Cómo Usarlo",
+    "description": "Guía completa de OSINT empresarial: qué es la inteligencia en fuentes abiertas, casos de uso reales, legalidad en España y cómo aprovecharlo.",
+    "author": {
+      "@type": "Person",
+      "name": "Daniel García",
+      "jobTitle": "Director de OSINT",
+      "worksFor": {"@type": "Organization", "name": "PRC Data & Intelligence"}
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "PRC Data & Intelligence",
+      "url": "https://streaming10.github.io/prc/"
+    },
+    "datePublished": "2026-01-30",
+    "dateModified": "2026-01-30",
+    "mainEntityOfPage": "https://streaming10.github.io/prc/blog/osint-empresarial-guia.html",
+    "image": "https://streaming10.github.io/prc/assets/images/og-default.jpg"
+  }
+  </script>
+
+  <!-- Schema.org — BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {"@type": "ListItem", "position": 1, "name": "Inicio", "item": "https://streaming10.github.io/prc/index.html"},
+      {"@type": "ListItem", "position": 2, "name": "Blog", "item": "https://streaming10.github.io/prc/blog.html"},
+      {"@type": "ListItem", "position": 3, "name": "OSINT empresarial", "item": "https://streaming10.github.io/prc/blog/osint-empresarial-guia.html"}
+    ]
+  }
+  </script>
+
+  <!-- Schema.org — FAQPage -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "¿Es legal el OSINT en España?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Sí. El OSINT se basa exclusivamente en fuentes de información públicas y legalmente accesibles. No implica acceso a sistemas protegidos, interceptación de comunicaciones ni obtención de datos personales sin base legal. Las investigaciones OSINT profesionales cumplen con la legislación española y europea, incluyendo el RGPD y la Ley Orgánica de Protección de Datos."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Qué tipo de empresas usan OSINT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Empresas de todos los tamaños y sectores utilizan OSINT: desde multinacionales que monitorizan su marca y competidores hasta despachos de abogados que realizan due diligence, fondos de inversión que evalúan riesgos, empresas industriales que analizan mercados y pymes que investigan a potenciales socios comerciales."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "¿Cuánto tarda una investigación OSINT?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Depende del alcance. Un perfil básico de un individuo o empresa puede completarse en 2-3 días. Una investigación de due diligence completa para una operación de M&A suele requerir entre 2 y 4 semanas. La monitorización continua de marca o competidores es un servicio permanente con reporting periódico."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+
+<body class="is-loading">
+
+  <!-- Skip link -->
+  <a href="#main" class="skip-link">Saltar al contenido principal</a>
+
+  <!-- ======== PRELOADER ======== -->
+  <div class="preloader" aria-hidden="true">
+    <svg class="preloader__mark" width="110" height="44" viewBox="0 0 110 44" xmlns="http://www.w3.org/2000/svg">
+      <text x="0" y="28" font-family="'Sora', sans-serif" font-weight="700" font-size="34" letter-spacing="-1.5" fill="#FFFFFF">PRC</text>
+      <text x="1" y="41" font-family="'IBM Plex Mono', monospace" font-weight="400" font-size="6.8" letter-spacing="3" fill="rgba(255,255,255,.45)">DATA &amp; INTELLIGENCE</text>
+    </svg>
+  </div>
+
+  <!-- ======== HEADER ======== -->
+  <header class="header" role="banner">
+    <div class="container container--wide header__inner">
+      <a href="../index.html" class="logo" aria-label="PRC Data & Intelligence — Inicio">
+        <svg width="124" height="38" viewBox="0 0 124 38" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <text x="0" y="24" class="logo-mark" font-family="'Sora', sans-serif" font-weight="700" font-size="28" letter-spacing="-1.2">PRC</text>
+          <text x="1" y="35" class="logo-sub" font-family="'IBM Plex Mono', monospace" font-weight="400" font-size="6.2" letter-spacing="2.6">DATA &amp; INTELLIGENCE</text>
+        </svg>
+      </a>
+      <nav class="nav" aria-label="Navegación principal">
+        <a href="../index.html"      class="nav__link">Inicio</a>
+        <a href="../servicios.html"  class="nav__link">Servicios</a>
+        <a href="../casos.html"      class="nav__link">Casos de éxito</a>
+        <a href="../blog.html"       class="nav__link is-active">Blog</a>
+        <a href="../contacto.html"   class="btn btn--outline nav__cta">Contacto</a>
+      </nav>
+      <button class="burger" aria-label="Abrir menú" aria-expanded="false">
+        <span class="burger__bar"></span>
+        <span class="burger__bar"></span>
+        <span class="burger__bar"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile nav -->
+  <div class="mobile-nav" role="dialog" aria-label="Menú de navegación">
+    <a href="../index.html"      class="mobile-nav__link">Inicio</a>
+    <a href="../servicios.html"  class="mobile-nav__link">Servicios</a>
+    <a href="../casos.html"      class="mobile-nav__link">Casos de éxito</a>
+    <a href="../blog.html"       class="mobile-nav__link" style="color:var(--c-accent)">Blog</a>
+    <a href="../contacto.html"   class="mobile-nav__link">Contacto</a>
+  </div>
+
+  <!-- ======== MAIN ======== -->
+  <main id="main">
+
+    <!-- ======== PAGE HERO ======== -->
+    <section class="page-hero page-hero--short" aria-label="Cabecera del artículo">
+      <div class="page-hero__bg" aria-hidden="true"></div>
+      <div class="container page-hero__body">
+        <nav class="breadcrumb" aria-label="Breadcrumb">
+          <a href="../index.html">Inicio</a>
+          <span aria-hidden="true">/</span>
+          <a href="../blog.html">Blog</a>
+          <span aria-hidden="true">/</span>
+          <span aria-current="page">OSINT empresarial</span>
+        </nav>
+        <h1 class="page-hero__title">OSINT empresarial: qué es y por qué su competencia ya lo usa</h1>
+      </div>
+    </section>
+
+    <!-- ======== ARTICLE ======== -->
+    <section class="legal section-pad" aria-labelledby="article-heading">
+      <div class="container">
+        <article class="legal__body reveal">
+
+          <!-- Author block -->
+          <div style="display:flex;align-items:center;gap:1rem;margin-bottom:2.5rem;padding-bottom:1.5rem;border-bottom:1px solid rgba(255,255,255,.08)">
+            <div style="width:48px;height:48px;border-radius:50%;background:var(--c-accent);display:flex;align-items:center;justify-content:center;font-weight:700;font-size:.9rem;color:#fff;flex-shrink:0">DG</div>
+            <div>
+              <strong style="display:block">Daniel García</strong>
+              <span style="opacity:.6;font-size:.85rem">Director de OSINT en PRC &middot; Enero 2026 &middot; 7 min de lectura</span>
+            </div>
+          </div>
+
+          <p>Vamos a contarle algo que probablemente no sepa: mientras usted lee este artículo, es muy posible que alguien esté recopilando información pública sobre su empresa. No es ilegal. No es hacking. Se llama OSINT, y su competencia ya lo usa.</p>
+
+          <h2 id="article-heading">¿Qué es el OSINT?</h2>
+          <p>OSINT son las siglas de <em>Open Source Intelligence</em>, o inteligencia de fuentes abiertas. Se trata de la recopilación, análisis e interpretación de información procedente de fuentes públicamente accesibles para producir inteligencia accionable. Registros mercantiles, redes sociales, publicaciones oficiales, bases de datos abiertas, foros especializados, noticias, patentes, dominios web: todo lo que es público es fuente potencial de OSINT.</p>
+          <p>El concepto no es nuevo. Las agencias de inteligencia llevan décadas utilizando fuentes abiertas como pilar fundamental de sus análisis. Lo que ha cambiado es que las herramientas y metodologías que antes estaban reservadas al ámbito gubernamental y militar ahora están al alcance del sector privado.</p>
+
+          <h2>Del ámbito militar al escritorio de su empresa</h2>
+          <p>El OSINT tiene sus raíces en la inteligencia militar. Durante la Guerra Fría, las agencias occidentales dedicaban equipos completos a monitorizar medios de comunicación soviéticos, publicaciones científicas y emisiones de radio. La información pública, correctamente analizada, revelaba más de lo que los servicios secretos obtenían por medios clandestinos.</p>
+          <p>Con la explosión de internet y las redes sociales, la cantidad de información pública disponible se ha multiplicado exponencialmente. Y con ella, el valor del OSINT para el mundo empresarial. Hoy, cualquier empresa con la metodología adecuada puede acceder a un nivel de inteligencia competitiva que hace dos décadas habría requerido recursos de una agencia gubernamental.</p>
+
+          <h2>5 casos de uso reales en el entorno empresarial</h2>
+
+          <h3>1. Due diligence digital</h3>
+          <p>Antes de cerrar una operación de inversión, fusión o adquisición, el OSINT permite verificar la identidad real de los intervinientes, detectar vínculos con entidades sancionadas, identificar litigios no declarados y evaluar riesgos reputacionales. No se trata de lo que la empresa objetivo le cuenta, sino de lo que las fuentes abiertas revelan.</p>
+
+          <h3>2. Mapeo de competidores</h3>
+          <p>¿Qué tecnologías está adoptando su competencia? ¿A qué perfiles está contratando? ¿En qué mercados está invirtiendo? Las ofertas de empleo, las patentes registradas, los movimientos societarios y la actividad en redes profesionales cuentan una historia que ningún informe anual recoge. El OSINT la descifra.</p>
+
+          <h3>3. Monitorización de marca y reputación</h3>
+          <p>Su marca no es lo que usted dice que es: es lo que internet dice que es. El OSINT permite monitorizar menciones, detectar campañas de desinformación, identificar filtraciones de datos en la dark web y anticipar crisis reputacionales antes de que escalen.</p>
+
+          <h3>4. Evaluación de riesgos de terceros</h3>
+          <p>Proveedores, partners, distribuidores: cualquier tercero con acceso a su información o sus sistemas es un vector de riesgo potencial. El OSINT proporciona una capa adicional de verificación que va más allá de los cuestionarios de seguridad estándar, revelando exposiciones que los procesos tradicionales no detectan.</p>
+
+          <h3>5. Análisis de mercado y entrada en nuevos territorios</h3>
+          <p>Antes de entrar en un nuevo mercado, el OSINT permite mapear el ecosistema competitivo, identificar regulaciones relevantes, evaluar riesgos geopolíticos y detectar oportunidades que no aparecen en los informes de consultoría convencionales. Es inteligencia a medida, no informes genéricos.</p>
+
+          <h2>¿Es legal el OSINT?</h2>
+          <p>Sí. Rotundamente sí. Y es importante dejarlo claro porque es la pregunta que más nos hacen.</p>
+          <p>El OSINT se basa <strong>exclusivamente</strong> en fuentes de información públicas y legalmente accesibles. No implica acceso a sistemas protegidos, interceptación de comunicaciones, ingeniería social ni obtención de datos personales sin base legal. Una investigación OSINT profesional respeta escrupulosamente la legislación vigente, incluyendo el RGPD, la Ley Orgánica de Protección de Datos (LOPD-GDD) y la Ley de Secretos Empresariales.</p>
+          <p>La clave está en la metodología. Un profesional de OSINT sabe exactamente qué puede recopilar, cómo tratarlo y qué límites legales y éticos no puede cruzar. Por eso es fundamental trabajar con equipos cualificados, no con herramientas automatizadas sin supervisión.</p>
+
+          <h2>Herramientas y metodología: lo que podemos contar</h2>
+          <p>El OSINT profesional combina herramientas tecnológicas con análisis humano experto. Sin revelar metodologías propietarias, podemos decir que un proceso de investigación OSINT típico sigue estas fases:</p>
+          <ol>
+            <li><strong>Definición del objetivo:</strong> qué necesitamos saber, por qué y para qué decisión.</li>
+            <li><strong>Planificación de fuentes:</strong> identificación de las fuentes más relevantes para el caso específico.</li>
+            <li><strong>Recopilación:</strong> extracción sistemática de información de las fuentes identificadas, utilizando herramientas especializadas y técnicas de búsqueda avanzada.</li>
+            <li><strong>Procesamiento y correlación:</strong> la información en bruto se estructura, se cruza y se verifica para separar el ruido de la señal.</li>
+            <li><strong>Análisis:</strong> el equipo de analistas interpreta los datos en contexto y extrae conclusiones accionables.</li>
+            <li><strong>Reporting:</strong> se entrega un informe claro, con hallazgos priorizados y recomendaciones concretas.</li>
+          </ol>
+          <p>Las herramientas varían según el caso: desde motores de búsqueda especializados y scrapers legales hasta plataformas de análisis de redes sociales, bases de datos comerciales y herramientas de visualización de grafos de relaciones.</p>
+
+          <h2>La ventaja competitiva que no puede ignorar</h2>
+          <p>En un mercado donde la información es poder, el OSINT no es un lujo: es una necesidad estratégica. Las empresas que integran la inteligencia de fuentes abiertas en sus procesos de decisión toman mejores decisiones, detectan riesgos antes y aprovechan oportunidades que su competencia ni siquiera ve.</p>
+          <p>La pregunta no es si debe usar OSINT. La pregunta es cuánto tiempo puede permitirse no hacerlo mientras su competencia sí lo hace.</p>
+
+          <!-- FAQ Section -->
+          <h2 style="margin-top:3rem">Preguntas frecuentes sobre OSINT empresarial</h2>
+
+          <div style="margin-bottom:1.5rem">
+            <h3>¿Es legal el OSINT en España?</h3>
+            <p>Sí. El OSINT se basa exclusivamente en fuentes públicas y legalmente accesibles. No implica hacking, interceptación de comunicaciones ni violación de privacidad. Las investigaciones OSINT profesionales cumplen con el RGPD, la LOPD-GDD y toda la legislación española y europea vigente.</p>
+          </div>
+
+          <div style="margin-bottom:1.5rem">
+            <h3>¿Qué tipo de empresas usan OSINT?</h3>
+            <p>Empresas de todos los tamaños y sectores: multinacionales, despachos de abogados, fondos de inversión, empresas industriales y pymes. Los casos de uso van desde la due diligence en operaciones de M&A hasta la monitorización de marca, pasando por el análisis de competidores y la evaluación de riesgos de terceros.</p>
+          </div>
+
+          <div style="margin-bottom:1.5rem">
+            <h3>¿Cuánto tarda una investigación OSINT?</h3>
+            <p>Depende del alcance. Un perfil básico puede completarse en 2-3 días. Una investigación de due diligence completa para una operación corporativa requiere entre 2 y 4 semanas. La monitorización continua es un servicio permanente con reporting periódico adaptado a las necesidades del cliente.</p>
+          </div>
+
+          <!-- Related Articles -->
+          <h2 style="margin-top:3rem">Artículos relacionados</h2>
+          <ul>
+            <li><a href="guia-ens-2026.html">Guía ENS 2026: Todo sobre el Esquema Nacional de Seguridad</a></li>
+            <li><a href="senales-auditoria-seguridad.html">5 señales de que su empresa necesita una auditoría de seguridad</a></li>
+          </ul>
+
+          <!-- CTA -->
+          <div style="margin-top:3rem;padding:2rem;background:rgba(255,255,255,.03);border:1px solid rgba(255,255,255,.08);border-radius:12px;text-align:center">
+            <h3>¿Quiere saber qué dice internet sobre su empresa?</h3>
+            <p>Nuestro equipo de analistas OSINT puede proporcionarle un informe de exposición digital de su organización.</p>
+            <a href="../contacto.html" class="btn btn--gold" style="margin-top:1rem">Solicitar análisis OSINT</a>
+          </div>
+
+          <!-- Share -->
+          <div style="margin-top:2.5rem;display:flex;align-items:center;gap:1rem">
+            <span style="opacity:.6;font-size:.85rem">Compartir:</span>
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https://streaming10.github.io/prc/blog/osint-empresarial-guia.html" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Compartir en LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="https://twitter.com/intent/tweet?url=https://streaming10.github.io/prc/blog/osint-empresarial-guia.html&text=OSINT%20Empresarial%3A%20Qu%C3%A9%20Es%20y%20C%C3%B3mo%20Usarlo" target="_blank" rel="noopener noreferrer" class="footer__social-link" aria-label="Compartir en Twitter">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16H20L8.267 4H4z"/><path d="M4 20l6.768-6.768M20 4l-6.768 6.768"/></svg>
+            </a>
+          </div>
+
+        </article>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- ======== FOOTER ======== -->
+  <footer class="footer" role="contentinfo">
+    <div class="container">
+
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="../index.html" class="logo" aria-label="PRC Data & Intelligence">
+            <svg width="114" height="36" viewBox="0 0 124 38" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <text x="0" y="24" class="logo-mark" font-family="'Sora', sans-serif" font-weight="700" font-size="28" letter-spacing="-1.2">PRC</text>
+              <text x="1" y="35" class="logo-sub" font-family="'IBM Plex Mono', monospace" font-weight="400" font-size="6.2" letter-spacing="2.6">DATA &amp; INTELLIGENCE</text>
+            </svg>
+          </a>
+          <p>Inteligencia de datos, investigación OSINT y ciberseguridad para empresas que exigen excelencia.</p>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Navegación</h4>
+          <nav class="footer__links" aria-label="Footer — navegación">
+            <a href="../index.html">Inicio</a>
+            <a href="../servicios.html">Servicios</a>
+            <a href="../casos.html">Casos de éxito</a>
+            <a href="../blog.html">Blog</a>
+            <a href="../contacto.html">Contacto</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Servicios</h4>
+          <nav class="footer__links" aria-label="Footer — servicios">
+            <a href="../servicios.html#bi">Business Intelligence</a>
+            <a href="../servicios.html#osint">OSINT</a>
+            <a href="../servicios.html#cyber">Ciberseguridad</a>
+            <a href="../servicios.html#auditorias">Auditorías &amp; Certificación</a>
+          </nav>
+        </div>
+
+        <div>
+          <h4 class="footer__title">Contacto</h4>
+          <div class="footer__contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Madrid, España</span>
+          </div>
+          <div class="footer__contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6A19.79 19.79 0 012.12 4.18 2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.574 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <span>+34 900 000 000</span>
+          </div>
+          <div class="footer__contact-row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 7L2 7"/></svg>
+            <span>contacto@prcdata.com</span>
+          </div>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="LinkedIn">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-4 0v7h-4v-7a6 6 0 016-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="X (Twitter)">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4l11.733 16H20L8.267 4H4z"/><path d="M4 20l6.768-6.768M20 4l-6.768 6.768"/></svg>
+            </a>
+            <a href="#" class="footer__social-link" aria-label="GitHub">
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 00-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0020 4.77 5.07 5.07 0 0019.91 1S18.73.65 16 2.48a13.38 13.38 0 00-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 005 4.77a5.44 5.44 0 00-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 009 18.13V22"/></svg>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer__bar">
+        <span class="footer__copy">&copy; 2026 PRC Data and Intelligence S.L. Todos los derechos reservados.</span>
+        <div class="footer__legal">
+          <a href="../aviso-legal.html">Aviso legal</a>
+          <a href="../privacidad.html">Privacidad</a>
+          <a href="../cookies.html">Cookies</a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>

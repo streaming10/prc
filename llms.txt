@@ -1,18 +1,19 @@
 # PRC Data & Intelligence
 
-> Empresa española especializada en analítica de datos (Business Intelligence), inteligencia competitiva (OSINT), ciberseguridad, threat intelligence y auditorías de certificación de seguridad (ISO 27001, ENS, RGPD, SOC 2). Sede en Madrid, España.
+> Empresa española especializada en analítica de datos (Business Intelligence), inteligencia competitiva (OSINT), ciberseguridad, threat intelligence, auditorías de certificación de seguridad (ISO 27001, ENS, RGPD, SOC 2) y formación ejecutiva en ciberriesgos para alta dirección. Sede en Madrid, España.
 
 ## Servicios
-- Analítica de Datos & Business Intelligence: dashboards ejecutivos, data warehouse, ETL/ELT, modelos predictivos, KPI design
-- Inteligencia Competitiva & OSINT: due diligence digital, mapeo de competidores, brand monitoring, análisis geopolítico
-- Ciberseguridad & Threat Intelligence: SOC 24/7, threat hunting, pentesting, incident response, formación
-- Auditorías & Certificación de Seguridad: ISO 27001, ENS (Esquema Nacional de Seguridad), RGPD/GDPR, SOC 2, gap analysis
+- Analítica de Datos & Business Intelligence: dashboards ejecutivos, data warehouse, ETL/ELT, modelos predictivos, KPI design, data governance
+- Inteligencia Competitiva & OSINT: due diligence digital, mapeo de competidores, brand monitoring, análisis geopolítico, vigilancia tecnológica
+- Ciberseguridad & Threat Intelligence: SOC 24/7, threat hunting, pentesting, incident response, formación en concienciación, SIEM/EDR
+- Auditorías & Certificación de Seguridad: ISO 27001, ENS (Esquema Nacional de Seguridad), RGPD/GDPR, SOC 2, ISO 22301, NIS2, gap analysis
+- Formación Ejecutiva: programas Boardroom Intelligence para C-level, crisis simulation, data literacy para directivos, compliance estratégico (ENS, RGPD, NIS2, DORA)
 
 ## Certificaciones del equipo
 CISSP, CISM, CEH, OSCP, CISA, ISO 27001 Lead Auditor, GOSI
 
 ## Sectores
-Finanzas, salud, industria, administración pública, retail, tecnología
+Finanzas y banca, salud y farmacia, industria y manufactura, administración pública, retail y e-commerce, tecnología y SaaS, sector legal
 
 ## Ubicación
 Madrid, España
@@ -24,10 +25,18 @@ Madrid, España
 
 ## Páginas del sitio
 - Home: https://streaming10.github.io/prc/index.html
-- Servicios: https://streaming10.github.io/prc/servicios.html
-- Sobre nosotros: https://streaming10.github.io/prc/nosotros.html
+- Servicios (índice): https://streaming10.github.io/prc/servicios.html
+- Analítica & BI: https://streaming10.github.io/prc/servicios/analitica-bi.html
+- OSINT: https://streaming10.github.io/prc/servicios/osint.html
+- Ciberseguridad: https://streaming10.github.io/prc/servicios/ciberseguridad.html
+- Auditorías: https://streaming10.github.io/prc/servicios/auditorias.html
+- Formación Ejecutiva: https://streaming10.github.io/prc/servicios/formacion-ejecutiva.html
+- Casos de éxito: https://streaming10.github.io/prc/casos.html
 - Blog: https://streaming10.github.io/prc/blog.html
+- Sobre nosotros: https://streaming10.github.io/prc/nosotros.html
 - Contacto: https://streaming10.github.io/prc/contacto.html
-- Aviso legal: https://streaming10.github.io/prc/aviso-legal.html
-- Privacidad: https://streaming10.github.io/prc/privacidad.html
-- Cookies: https://streaming10.github.io/prc/cookies.html
+
+## Blog
+- Guía ENS 2026: https://streaming10.github.io/prc/blog/guia-ens-2026.html
+- 5 señales auditoría: https://streaming10.github.io/prc/blog/senales-auditoria-seguridad.html
+- OSINT empresarial: https://streaming10.github.io/prc/blog/osint-empresarial-guia.html

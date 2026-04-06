@@ -14,7 +14,14 @@
       "Bash(grep -c 'rel=\"\"\"\"canonical\"\"\"\"' *.html)",
       "Bash(grep -c 'twitter:card' *.html)",
       "Bash(grep -c 'application/ld+json' *.html)",
-      "Bash(wc -l *.html css/styles.css js/main.js sitemap.xml robots.txt llms.txt)"
+      "Bash(wc -l *.html css/styles.css js/main.js sitemap.xml robots.txt llms.txt)",
+      "Bash(cd:*)",
+      "Bash(for f:*)",
+      "Bash(do echo:*)",
+      "Read(//c/Users/Luis/Downloads/CLAUDE/prc/**)",
+      "Bash(done)",
+      "Bash(grep -l 'Casos de éxito' *.html)",
+      "Bash(grep -l 'servicios/analitica' *.html)"
     ]
   }
 }
