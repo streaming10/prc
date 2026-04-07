@@ -75,24 +75,26 @@
   });
 
   /* ------------------------------------------
-     ACTIVE NAV LINK on scroll (IntersectionObserver)
+     ACTIVE NAV LINK on scroll
      ------------------------------------------ */
   const navLinks = document.querySelectorAll('.nav__link[data-section]');
-  const navSections = document.querySelectorAll('section[id]');
 
-  if (navLinks.length && navSections.length && 'IntersectionObserver' in window) {
-    const navIO = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (!entry.isIntersecting) return;
-        const id = entry.target.id;
-        navLinks.forEach(link => {
-          link.classList.toggle('is-active', link.dataset.section === id);
-        });
+  function updateActiveLink() {
+    const y = window.scrollY + 250;
+    document.querySelectorAll('section[id]').forEach(sec => {
+      const top = sec.offsetTop;
+      const bot = top + sec.offsetHeight;
+      const id = sec.id;
+      navLinks.forEach(link => {
+        if (link.dataset.section === id) {
+          link.classList.toggle('is-active', y >= top && y < bot);
+        }
       });
-    }, { rootMargin: '-20% 0px -60% 0px' });
-
-    navSections.forEach(sec => navIO.observe(sec));
+    });
   }
+
+  window.addEventListener('scroll', updateActiveLink, { passive: true });
+  updateActiveLink();
 
   /* ------------------------------------------
      SCROLL REVEAL — IntersectionObserver
@@ -327,24 +329,16 @@
       requestAnimationFrame(draw);
     }
 
-    let canvasRect = null;
-
-    function updateRect() {
-      canvasRect = canvas.getBoundingClientRect();
-    }
-
     resize();
     initNodes();
     draw();
-    updateRect();
 
-    window.addEventListener('resize', () => { resize(); initNodes(); updateRect(); });
-    window.addEventListener('scroll', updateRect, { passive: true });
+    window.addEventListener('resize', () => { resize(); initNodes(); });
 
     canvas.addEventListener('mousemove', (e) => {
-      if (!canvasRect) return;
-      mouse.x = e.clientX - canvasRect.left;
-      mouse.y = e.clientY - canvasRect.top;
+      const rect = canvas.getBoundingClientRect();
+      mouse.x = e.clientX - rect.left;
+      mouse.y = e.clientY - rect.top;
     });
 
     canvas.addEventListener('mouseleave', () => {
