@@ -614,7 +614,7 @@ a.contact-info__value:hover{color:var(--c-primary)}
 .method__step{position:relative;padding:var(--s-8);background:var(--c-white);border:1px solid var(--c-border);border-radius:var(--radius-lg);transition:transform var(--dur-base) var(--ease),box-shadow var(--dur-base) var(--ease)}
 .method__step:hover{transform:translateY(-3px);box-shadow:var(--sh-md)}
 .method__num{display:inline-block;font-family:var(--f-mono);font-size:.72rem;font-weight:600;color:var(--c-accent);margin-bottom:var(--s-3);letter-spacing:.05em}
-.method__step h4{margin-bottom:var(--s-2)}
+.method__step h3,.method__step h4{margin-bottom:var(--s-2)}
 .method__step p{font-size:.9rem}
 
 /* ============================================
