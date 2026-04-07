@@ -21,7 +21,8 @@
       "Read(//c/Users/Luis/Downloads/CLAUDE/prc/**)",
       "Bash(done)",
       "Bash(grep -l 'Casos de éxito' *.html)",
-      "Bash(grep -l 'servicios/analitica' *.html)"
+      "Bash(grep -l 'servicios/analitica' *.html)",
+      "Bash(find . -name \"*.html\" ! -path './.git/*' -exec sed -i 's|<h3 class=\"\"\"\"footer__title\"\"\"\">\\\\\\(.*\\\\\\)</h4>|<h3 class=\"\"\"\"footer__title\"\"\"\">\\\\1</h3>|g' {})"
     ]
   }
 }
