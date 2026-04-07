@@ -360,33 +360,33 @@ p{color:var(--c-text-muted);max-width:62ch}
 /* ============================================
    16 · FOOTER
    ============================================ */
-.footer{background:var(--c-dark);color:rgba(255,255,255,.55);padding:var(--s-16) 0 var(--s-6)}
+.footer{background:var(--c-dark);color:rgba(255,255,255,.75);padding:var(--s-16) 0 var(--s-6)}
 .footer::before{content:'';display:block;height:1px;background:linear-gradient(90deg,transparent,rgba(var(--c-secondary-rgb),.25),transparent);margin-bottom:var(--s-16)}
 
 .footer__grid{display:grid;grid-template-columns:1fr;gap:var(--s-10);margin-bottom:var(--s-12)}
 
-.footer__brand p{font-size:.88rem;color:rgba(255,255,255,.38);margin-top:var(--s-5);max-width:32ch}
+.footer__brand p{font-size:.88rem;color:rgba(255,255,255,.65);margin-top:var(--s-5);max-width:32ch}
 .footer__brand .logo-mark{fill:#fff}
 .footer__brand .logo-sub{fill:rgba(255,255,255,.45)}
 
 .footer__title{font-family:var(--f-display);font-size:.8rem;font-weight:700;color:#fff;text-transform:uppercase;letter-spacing:.1em;margin-bottom:var(--s-5)}
 .footer__links{display:flex;flex-direction:column;gap:.5rem}
-.footer__links a{font-size:.88rem;color:rgba(255,255,255,.45);transition:color var(--dur-fast)}
+.footer__links a{font-size:.88rem;color:rgba(255,255,255,.7);transition:color var(--dur-fast)}
 .footer__links a:hover{color:#fff}
 
-.footer__contact-row{display:flex;align-items:flex-start;gap:.7rem;font-size:.88rem;color:rgba(255,255,255,.45);margin-bottom:.65rem}
+.footer__contact-row{display:flex;align-items:flex-start;gap:.7rem;font-size:.88rem;color:rgba(255,255,255,.7);margin-bottom:.65rem}
 .footer__contact-row svg{width:17px;height:17px;color:var(--c-accent);flex-shrink:0;margin-top:3px}
 
 .footer__social{display:flex;gap:var(--s-3);margin-top:var(--s-6)}
-.footer__social-link{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.12);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.42);transition:all var(--dur-base)}
+.footer__social-link{width:38px;height:38px;border-radius:50%;border:1px solid rgba(255,255,255,.2);display:flex;align-items:center;justify-content:center;color:rgba(255,255,255,.65);transition:all var(--dur-base)}
 .footer__social-link:hover{border-color:var(--c-accent);color:var(--c-accent);transform:translateY(-2px)}
 .footer__social-link svg{width:17px;height:17px}
 
 .footer__bar{border-top:1px solid rgba(255,255,255,.07);padding-top:var(--s-6);display:flex;flex-direction:column;gap:var(--s-4);align-items:center;text-align:center}
-.footer__copy{font-size:.76rem;color:rgba(255,255,255,.45)}
+.footer__copy{font-size:.76rem;color:rgba(255,255,255,.65)}
 .footer__legal{display:flex;gap:var(--s-6)}
-.footer__legal a{font-size:.76rem;color:rgba(255,255,255,.45);transition:color var(--dur-fast)}
-.footer__legal a:hover{color:rgba(255,255,255,.55)}
+.footer__legal a{font-size:.76rem;color:rgba(255,255,255,.65);transition:color var(--dur-fast)}
+.footer__legal a:hover{color:rgba(255,255,255,.9)}
 
 /* ============================================
    18 · PAGE HERO (inner pages)
